@@ -31,7 +31,8 @@ async function sendMessage() {
 
     try {
 
-        const response = await fetch("http://localhost:4000/api/content", {
+        //const response = await fetch("http://localhost:4000/api/content", {
+        const response = await fetch("/api/content", {
 
             method: "POST",
 
