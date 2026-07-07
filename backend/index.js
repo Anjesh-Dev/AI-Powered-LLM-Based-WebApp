@@ -63,7 +63,15 @@ app.post("/api/content", async (req, res) => {
 
 });
 
-// Start Server
+// // Start Server
+// app.listen(PORT, () => {
+//     console.log(`Server Running : http://localhost:${PORT}`);
+// });
+
+// yahan se frontend serve hoga
+app.use(express.static("public"));
+
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
-    console.log(`Server Running : http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
