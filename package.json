@@ -4,9 +4,8 @@
   "description": "Gemini AI Chat Application",
   "main": "api.js",
   "scripts": {
-    "start": "node api.js",
-    "dev": "nodemon api.js"
-  },
+    "start": "node backend/index.js"
+    },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "cors": "^2.8.6",
